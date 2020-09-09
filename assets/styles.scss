@@ -1,0 +1,239 @@
+// COLOR PALLETE
+
+$first-color: #f9f7f7;
+$second-color: #dbe2ef;
+$light-blue: #3f72af;
+$high-blue: #78adec;
+$dark-blue: #243b55;
+$mid-blue: #32547a;
+$dark: #212121;
+$gray: #757575;
+$light-gray: #bdbdbd;
+
+// MIXINS
+
+@mixin box-shadow($x, $y, $blur, $color) {
+	-webkit-box-shadow: $x $y $blur $color;
+	-moz-box-shadow: $x $y $blur $color;
+	-ms-box-shadow: $x $y $blur $color;
+	box-shadow: $x $y $blur $color;
+}
+
+@mixin gradient($x, $color1, $color2) {
+	background: linear-gradient($x, $color1, $color2);
+}
+
+@mixin text-shadow($x, $y, $blur, $color) {
+	text-shadow: $x $y $blur $color;
+}
+
+// FONTS
+
+$titles: 'Open Sans', sans-serif;
+$body: 'Roboto Mono', monospace;
+
+// MAIN STYLES
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 15px;
+	scroll-behavior: smooth;
+}
+
+body {
+	color: $first-color;
+	background: #141e30; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #243b55, #141e30); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#243b55,
+		#141e30
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	font-family: $body;
+}
+// HEADER STYLES
+header {
+	border-radius: 5px;
+	padding: 3em;
+	margin: 3em;
+	text-align: center;
+	background: $light-blue;
+	img {
+		border-radius: 50%;
+		margin-bottom: 1em;
+	}
+	.navbar-nav,
+	.mr-auto {
+		border-width: 3px;
+		border-style: solid;
+		border-image: linear-gradient(to bottom, #243b55, #141e30) 1 100%;
+		flex: 1;
+		margin: auto !important;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0 5em;
+		font-size: 1.3rem;
+		a {
+			color: #243b55;
+			&:hover {
+				color: $second-color;
+				transform: scale(1.1);
+				transition: 0.5s;
+			}
+		}
+	}
+	h1 {
+		font-size: 3.5rem;
+		font-family: $titles;
+	}
+	.subtitle {
+		font-size: 1.5rem;
+		font-family: $titles;
+	}
+	.social {
+		padding: 2em 0 3em 0;
+		a {
+			color: $dark-blue;
+			&:hover {
+				color: $second-color;
+			}
+			i {
+				font-size: 2rem;
+				justify-content: space-between;
+			}
+		}
+	}
+}
+// MAIN SECTION
+main {
+	color: $dark;
+	border-radius: 5px;
+	background: $second-color;
+	padding: 4em 2em;
+	h2 {
+		text-align: center;
+		padding: 1.5em;
+		font-size: 2.2rem;
+	}
+	h3 {
+		font-size: 1.7rem;
+	}
+	ul {
+		list-style-type: square;
+		margin-left: 1.1em;
+	}
+	a {
+		color: $high-blue;
+		&:hover {
+			color: $first-color;
+			text-decoration: none;
+		}
+	}
+	.card {
+		margin: 3em;
+		padding: 2em;
+		background: $mid-blue;
+		color: $first-color;
+		hr {
+			border: white;
+		}
+		&:hover {
+			cursor: pointer;
+			transform: scale(1.03);
+			transition: 0.3s;
+		}
+	}
+}
+// ABOUT ME SECTION
+.about {
+	padding-bottom: 2em;
+}
+// EDUCATION SECTION
+.education {
+	text-align: center;
+	h3 {
+		font-size: 1.5rem;
+	}
+	h4 {
+		font-size: 1.2rem;
+	}
+	.card {
+		height: 200px;
+		max-width: 350px;
+		margin: 2em auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.education-cards {
+		.card {
+			max-width: 500px;
+		}
+	}
+	.certifications-title {
+		font-size: 2rem;
+	}
+}
+// SKILLS SECTION
+.skills-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 2.5em 0;
+	img {
+		max-width: 200px;
+	}
+	.spec {
+		height: 120px;
+	}
+}
+// CONTACT SECTION
+.contact {
+	padding-top: 2em;
+}
+.contact-form {
+	width: 100%;
+	margin: 0 auto;
+	padding: 3em 3em;
+	i {
+		color: $mid-blue;
+	}
+	.btn-form {
+		padding-top: 0.7em;
+	}
+	.button {
+		font-weight: 500;
+		font-size: 1.1rem;
+		font-family: $body;
+		padding: 0.3em 0;
+		color: $first-color;
+		background-color: $mid-blue;
+		width: 70px;
+		border: none;
+		border-radius: 5px;
+		&:hover {
+			color: $second-color;
+			transform: scale(1.05);
+			transition: 0.5s;
+		}
+	}
+}
+// FOOTER SECTION
+.footer {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background: $light-blue;
+	border-radius: 5px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

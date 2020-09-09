@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #f9f7f7;
+  background: #141e30;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#243b55), to(#141e30));
+  background: linear-gradient(to right, #243b55, #141e30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Roboto Mono", monospace;
+}
+
+header {
+  border-radius: 5px;
+  padding: 3em;
+  margin: 3em;
+  text-align: center;
+  background: #3f72af;
+}
+
+header img {
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+header .navbar-nav,
+header .mr-auto {
+  border-width: 3px;
+  border-style: solid;
+  -o-border-image: linear-gradient(to bottom, #243b55, #141e30) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#243b55), to(#141e30)) 1 100%;
+     border-image: linear-gradient(to bottom, #243b55, #141e30) 1 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: auto !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5em;
+  font-size: 1.3rem;
+}
+
+header .navbar-nav a,
+header .mr-auto a {
+  color: #243b55;
+}
+
+header .navbar-nav a:hover,
+header .mr-auto a:hover {
+  color: #dbe2ef;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+header .subtitle {
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+header .social {
+  padding: 2em 0 3em 0;
+}
+
+header .social a {
+  color: #243b55;
+}
+
+header .social a:hover {
+  color: #dbe2ef;
+}
+
+header .social a i {
+  font-size: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main {
+  color: #212121;
+  border-radius: 5px;
+  background: #dbe2ef;
+  padding: 4em 2em;
+}
+
+main h2 {
+  text-align: center;
+  padding: 1.5em;
+  font-size: 2.2rem;
+}
+
+main h3 {
+  font-size: 1.7rem;
+}
+
+main ul {
+  list-style-type: square;
+  margin-left: 1.1em;
+}
+
+main a {
+  color: #78adec;
+}
+
+main a:hover {
+  color: #f9f7f7;
+  text-decoration: none;
+}
+
+main .card {
+  margin: 3em;
+  padding: 2em;
+  background: #32547a;
+  color: #f9f7f7;
+}
+
+main .card hr {
+  border: white;
+}
+
+main .card:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.about {
+  padding-bottom: 2em;
+}
+
+.education {
+  text-align: center;
+}
+
+.education h3 {
+  font-size: 1.5rem;
+}
+
+.education h4 {
+  font-size: 1.2rem;
+}
+
+.education .card {
+  height: 200px;
+  max-width: 350px;
+  margin: 2em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.education .education-cards .card {
+  max-width: 500px;
+}
+
+.education .certifications-title {
+  font-size: 2rem;
+}
+
+.skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 2.5em 0;
+}
+
+.skills-container img {
+  max-width: 200px;
+}
+
+.skills-container .spec {
+  height: 120px;
+}
+
+.contact {
+  padding-top: 2em;
+}
+
+.contact-form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3em 3em;
+}
+
+.contact-form i {
+  color: #32547a;
+}
+
+.contact-form .btn-form {
+  padding-top: 0.7em;
+}
+
+.contact-form .button {
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-family: "Roboto Mono", monospace;
+  padding: 0.3em 0;
+  color: #f9f7f7;
+  background-color: #32547a;
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form .button:hover {
+  color: #dbe2ef;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background: #3f72af;
+  border-radius: 5px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=styles.css.map */
