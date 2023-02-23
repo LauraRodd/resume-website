@@ -13,4 +13,4 @@ A resume website built for an IT Engineer, can be used as a template.
 - PHP
 
 
-### View [live](https://laurarodd.github.io/resume-website/)
+
